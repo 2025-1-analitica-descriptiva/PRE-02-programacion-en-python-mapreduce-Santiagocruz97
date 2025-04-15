@@ -27,7 +27,7 @@ def copy_raw_files_to_input_folder(n):
     for file in glob.glob("files/raw/*"):
         for i in range(1, n + 1):
             with open(file, "r", encoding="utf-8") as f:
-                with open(f"files/input/{os.path.basename(file).split(".")[0]}_{i}.txt", "w", encoding="utf-8") as f2:
+                with open(f"files/input/{os.path.basename(file).split('.')[0]}_{i}.txt", "w", encoding="utf-8") as f2:
                     f2.write(f.read())
 
 
